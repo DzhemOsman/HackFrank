@@ -5,10 +5,6 @@ export const siteConfig = {
     description: "Frankfurt’s most innovative hackathon, organized by GDGoC Frankfurt — 24 hours of creativity, community, and collaboration to shape the future\n",
     navItems: [
         {
-            label: "Home",
-            href: "/",
-        },
-        {
             label: "Goal",
             href: "#goal",
         },
@@ -60,10 +56,8 @@ export const siteConfig = {
         },
     ],
     links: {
-        github: "https://github.com/heroui-inc/heroui",
-        twitter: "https://twitter.com/hero_ui",
-        docs: "https://heroui.com",
-        discord: "https://discord.gg/9b6yyZKmH4",
-        sponsor: "https://patreon.com/jrgarciadev",
+        linkedin: "https://www.linkedin.com/company/gdg-on-campus-frankfurt/",
+        instagram: "https://www.instagram.com/gdgoc.frankfurt/",
+        gdg: "https://gdg.community.dev/gdg-on-campus-goethe-university-frankfurt-germany/"
     },
 };
