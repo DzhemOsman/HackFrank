@@ -5,49 +5,21 @@ import {button as buttonStyles} from "@heroui/theme";
 import {siteConfig} from "@/config/site";
 import {title, subtitle} from "@/components/primitives";
 import {GithubIcon} from "@/components/icons";
+import Image from "next/image";
 
 export default function Home() {
     return (
         <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-            <div className="inline-block max-w-3xl text-center justify-center">
-                <span className={title({size: "lg"})}>Frankfurt’s most innovative hackathon, organized by&nbsp;</span>
-                <span className={title({size: "lg", color: "cyan"})}>GDGoC Frankfurt&nbsp;</span>
+            <Image src="/logo.png" alt="HackFrank Logo" width={500} height={500}/>
+            <div className="inline-block max-w-4xl text-center justify-center">
+                <span className={title({size: "sm"})}>Frankfurt’s most innovative hackathon, organized by&nbsp;</span>
+                <span className={title({size: "sm", color: "cyan"})}>GDGoC Frankfurt&nbsp;</span>
                 <br/>
-                <div className={subtitle({class: "mt-4"})}>
+                <div className={subtitle({class: "mt-3"})}>
                     24 hours of creativity, community, and collaboration to shape the
                     future
                 </div>
             </div>
-            <div className="flex gap-3">
-                <Link
-                    isExternal
-                    className={buttonStyles({
-                        color: "primary",
-                        radius: "full",
-                        variant: "shadow",
-                    })}
-                    href={siteConfig.links.docs}
-                >
-                    Documentation
-                </Link>
-                <Link
-                    isExternal
-                    className={buttonStyles({variant: "bordered", radius: "full"})}
-                    href={siteConfig.links.github}
-                >
-                    <GithubIcon size={20}/>
-                    GitHub
-                </Link>
-            </div>
-
-            <div className="mt-8">
-                <Snippet hideCopyButton hideSymbol variant="bordered">
-          <span>
-            Get started by editing <Code color="primary">app/page.tsx</Code>
-          </span>
-                </Snippet>
-            </div>
-            <section id="goal" className="w-full mt-20"></section>
         </section>
     );
 }
