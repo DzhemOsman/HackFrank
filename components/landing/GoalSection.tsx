@@ -1,13 +1,13 @@
 import React from "react";
-import { Section } from "./Section";
-import { SectionTitle } from "./SectionTitle";
-import { landingContent } from "@/config/content";
+import {Section} from "./Section";
+import {SectionTitle} from "./SectionTitle";
+import {landingContent} from "@/config/content";
 
 export const GoalSection = () => (
     <Section id="goal">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="md:col-span-2">
-                <SectionTitle main={landingContent.goal.title} sub={landingContent.goal.highlightedTitle} />
+                <SectionTitle main={landingContent.goal.title} sub={landingContent.goal.highlightedTitle}/>
                 <p className="text-lg mb-8">{landingContent.goal.description}</p>
                 <ul className="space-y-4">
                     {landingContent.goal.keyGoals.map((goal, index) => (

@@ -1,16 +1,18 @@
 import React from "react";
-import { Section } from "./Section";
-import { landingContent } from "@/config/content";
+import {Section} from "./Section";
+import {landingContent} from "@/config/content";
 
 export const ScheduleSection = () => (
     <Section id="schedule">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 className="text-4xl font-bold mb-6">
-                    <span className="text-cyan-400">{landingContent.schedule.title}</span><br /> {landingContent.schedule.highlightedTitle}
+                    <span
+                        className="text-cyan-400">{landingContent.schedule.title}</span>
+                    <br/> {landingContent.schedule.highlightedTitle}
                 </h2>
                 {landingContent.schedule.description.map((text, index) => (
-                    <p key={index} className="text-lg mt-4" dangerouslySetInnerHTML={{ __html: text }} />
+                    <p key={index} className="text-lg mt-4" dangerouslySetInnerHTML={{__html: text}}/>
                 ))}
             </div>
             <div className="grid grid-cols-2 gap-8">
