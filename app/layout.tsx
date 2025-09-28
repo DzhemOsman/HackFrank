@@ -9,7 +9,7 @@ import {siteConfig} from "@/config/site";
 import {fontSans} from "@/config/fonts";
 import {Navbar} from "@/components/navbar";
 import React from "react";
-import {LinkedInIcon, InstagramIcon, GdGIcon} from "@/components/icons"; // Import the new icons
+import {GdGIcon, InstagramIcon, LinkedInIcon} from "@/components/icons"; // Import the new icons
 
 export const metadata: Metadata = {
     title: {
@@ -29,11 +29,7 @@ export const viewport: Viewport = {
     ],
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode; }) {
     return (
         <html suppressHydrationWarning lang="en">
         <head>

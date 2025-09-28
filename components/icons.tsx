@@ -2,12 +2,7 @@ import * as React from "react";
 
 import {IconSvgProps} from "@/types";
 
-export const DiscordIcon: React.FC<IconSvgProps> = ({
-                                                        size = 24,
-                                                        width,
-                                                        height,
-                                                        ...props
-                                                    }) => {
+export const DiscordIcon: React.FC<IconSvgProps> = ({size = 24, width, height, ...props}) => {
     return (
         <svg
             height={size || height}
@@ -23,12 +18,7 @@ export const DiscordIcon: React.FC<IconSvgProps> = ({
     );
 };
 
-export const TwitterIcon: React.FC<IconSvgProps> = ({
-                                                        size = 24,
-                                                        width,
-                                                        height,
-                                                        ...props
-                                                    }) => {
+export const TwitterIcon: React.FC<IconSvgProps> = ({size = 24, width, height, ...props}) => {
     return (
         <svg
             height={size || height}
@@ -44,12 +34,7 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({
     );
 };
 
-export const GithubIcon: React.FC<IconSvgProps> = ({
-                                                       size = 24,
-                                                       width,
-                                                       height,
-                                                       ...props
-                                                   }) => {
+export const GithubIcon: React.FC<IconSvgProps> = ({size = 24, width, height, ...props}) => {
     return (
         <svg
             height={size || height}
@@ -67,12 +52,7 @@ export const GithubIcon: React.FC<IconSvgProps> = ({
     );
 };
 
-export const MoonFilledIcon = ({
-                                   size = 24,
-                                   width,
-                                   height,
-                                   ...props
-                               }: IconSvgProps) => (
+export const MoonFilledIcon = ({size = 24, width, height, ...props}: IconSvgProps) => (
     <svg
         aria-hidden="true"
         focusable="false"
@@ -89,12 +69,7 @@ export const MoonFilledIcon = ({
     </svg>
 );
 
-export const SunFilledIcon = ({
-                                  size = 24,
-                                  width,
-                                  height,
-                                  ...props
-                              }: IconSvgProps) => (
+export const SunFilledIcon = ({size = 24, width, height, ...props}: IconSvgProps) => (
     <svg
         aria-hidden="true"
         focusable="false"
@@ -112,12 +87,7 @@ export const SunFilledIcon = ({
     </svg>
 );
 
-export const HeartFilledIcon = ({
-                                    size = 24,
-                                    width,
-                                    height,
-                                    ...props
-                                }: IconSvgProps) => (
+export const HeartFilledIcon = ({size = 24, width, height, ...props}: IconSvgProps) => (
     <svg
         aria-hidden="true"
         focusable="false"
