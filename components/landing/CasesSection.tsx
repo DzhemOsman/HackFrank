@@ -1,7 +1,7 @@
 import React from "react";
 import {Section} from "./Section";
 import {landingContent} from "@/config/content";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export const CasesSection = () => (
     <Section id="cases">
