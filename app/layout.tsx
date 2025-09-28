@@ -51,6 +51,10 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
                 </main>
                 <footer className="w-full flex items-center justify-center py-3">
                     <div className="flex items-center gap-4">
+                        <Link href="/imprint" aria-label="Imprint" className="text-default-500 text-sm hover:text-default-700">
+                            Imprint
+                        </Link>
+                        <span className="text-default-300">|</span>
                         <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
                             <LinkedInIcon className="text-default-500"/>
                         </Link>
