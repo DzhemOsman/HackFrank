@@ -17,7 +17,7 @@ export const HeroSection = () => (
             <div className="relative z-10 p-8">
                 <Logo/>
                 <span className={title({size: "sm"})}>{landingContent.hero.title}</span>
-                <span className={title({size: "sm", color: "cyan"})}>{landingContent.hero.highlightedTitle}</span>
+                <span className={title({size: "sm", color: "primary"})}>{landingContent.hero.highlightedTitle}</span>
                 <br/>
                 <div className={subtitle({class: "mt-3"})}>{landingContent.hero.subtitle}</div>
             </div>

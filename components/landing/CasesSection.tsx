@@ -13,13 +13,13 @@ export const CasesSection = () => (
             <div>
                 <h2 className="text-4xl font-bold mb-6">
                     <span
-                        className="text-cyan-400">{landingContent.cases.title}</span>
+                        className="text-primary">{landingContent.cases.title}</span>
                     <br/> {landingContent.cases.highlightedTitle}
                 </h2>
                 <div className="space-y-6">
                     {landingContent.cases.items.map((caseItem, index) => (
                         <div key={index}>
-                            <h3 className="text-xl font-bold text-cyan-400">{caseItem.title}</h3>
+                            <h3 className="text-xl font-bold text-secondary">{caseItem.title}</h3>
                             <p className="mt-2">{caseItem.description}</p>
                         </div>
                     ))}

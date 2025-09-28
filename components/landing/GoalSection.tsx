@@ -12,7 +12,7 @@ export const GoalSection = () => (
                 <ul className="space-y-4">
                     {landingContent.goal.keyGoals.map((goal, index) => (
                         <li key={index} className="flex items-start">
-                            <span className="text-cyan-400 font-bold mr-2">•</span>
+                            <span className="text-primary font-bold mr-2">•</span>
                             <div>
                                 <h3 className="font-bold">{goal.title}</h3>
                                 <p>{goal.description}</p>
@@ -25,7 +25,7 @@ export const GoalSection = () => (
                 {landingContent.goal.stats.map((stat, index) => (
                     <div key={index} className="text-center">
                         <p className="text-6xl font-bold">{stat.value}</p>
-                        <p className="text-cyan-400 font-semibold">{stat.label}</p>
+                        <p className="text-secondary font-semibold">{stat.label}</p>
                     </div>
                 ))}
             </div>

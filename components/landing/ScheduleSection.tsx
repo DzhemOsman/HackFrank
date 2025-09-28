@@ -8,7 +8,7 @@ export const ScheduleSection = () => (
             <div>
                 <h2 className="text-4xl font-bold mb-6">
                     <span
-                        className="text-cyan-400">{landingContent.schedule.title}</span>
+                        className="text-primary">{landingContent.schedule.title}</span>
                     <br/> {landingContent.schedule.highlightedTitle}
                 </h2>
                 {landingContent.schedule.description.map((text, index) => (
@@ -19,7 +19,7 @@ export const ScheduleSection = () => (
                 {landingContent.schedule.days.map((day, index) => (
                     <div key={index}>
                         <h3 className="text-2xl font-bold">{day.title}</h3>
-                        <p className="text-cyan-400 font-semibold mb-4">{day.day}</p>
+                        <p className="text-secondary font-semibold mb-4">{day.day}</p>
                         <ul className="space-y-3">
                             {day.events.map((event, eventIndex) => (
                                 <li key={eventIndex}><strong>{event.time}</strong> {event.description}</li>
