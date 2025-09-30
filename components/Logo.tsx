@@ -4,7 +4,7 @@ interface LogoProps {
   sizeClasses?: string;
 }
 
-export const Logo = ({ sizeClasses = "text-7xl md:text-8xl" }: LogoProps) => {
+export const Logo = ({ sizeClasses = "text-7xl md:text-9xl" }: LogoProps) => {
   return (
     <div className={`font-black leading-none ${sizeClasses}`}>
       <div

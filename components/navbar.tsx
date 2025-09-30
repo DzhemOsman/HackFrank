@@ -51,13 +51,13 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
-            <LinkedInIcon className="text-default-500" style={{ height: '24px', width: 'auto' }} />
+            <LinkedInIcon className="text-secondary" style={{ height: '24px', width: 'auto' }} />
           </Link>
           <Link isExternal aria-label="Instagram" href={siteConfig.links.instagram}>
-            <InstagramIcon className="text-default-500" style={{ height: '24px', width: 'auto' }} />
+            <InstagramIcon className="text-secondary" style={{ height: '24px', width: 'auto' }} />
           </Link>
           <Link isExternal aria-label="GDG" href={siteConfig.links.gdg}>
-            <GdGIcon className="text-default-500" style={{ height: '24px', width: 'auto' }} />
+            <GdGIcon className="text-secondary" style={{ height: '24px', width: 'auto' }} />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -65,7 +65,7 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
-            className="text-sm font-normal text-default-600 bg-default-100"
+            className="text-sm font-normal text-white bg-primary hover:bg-secondary"
             href={siteConfig.links.gdg}
             startContent={""}
             variant="flat"
@@ -77,13 +77,13 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
-          <LinkedInIcon className="text-default-500" style={{ height: '24px', width: 'auto' }} />
+          <LinkedInIcon className="text-secondary" style={{ height: '24px', width: 'auto' }} />
         </Link>
         <Link isExternal aria-label="Instagram" href={siteConfig.links.instagram}>
-          <InstagramIcon className="text-default-500" style={{ height: '24px', width: 'auto' }} />
+          <InstagramIcon className="text-secondary" style={{ height: '24px', width: 'auto' }} />
         </Link>
         <Link isExternal aria-label="GDG" href={siteConfig.links.gdg}>
-          <GdGIcon className="text-default-500" style={{ height: '24px', width: 'auto' }} />
+          <GdGIcon className="text-secondary" style={{ height: '24px', width: 'auto' }} />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
