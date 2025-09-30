@@ -15,9 +15,10 @@ export default function ImprintPage() {
           <h2 className="text-2xl font-semibold mb-4">Information according to § 5 TMG</h2>
           <div className="bg-default-100 p-6 rounded-lg">
             <p className="mb-2"><strong>HackFrank</strong></p>
-            <p className="mb-2">Organized by GDG on Campus Frankfurt</p>
-            <p className="mb-2">Goethe University Frankfurt</p>
-            <p className="mb-2">Frankfurt am Main, Germany</p>
+            <p className="mb-2">Represented by Tim Sassmanshausen</p>
+            <p className="mb-2">Europa-Allee 136</p>
+            <p className="mb-2">60486 Frankfurt am Main</p>
+            <p className="mb-2">Germany</p>
           </div>
         </section>
 
