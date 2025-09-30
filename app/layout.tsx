@@ -9,7 +9,7 @@ import {siteConfig} from "@/config/site";
 import {fontSans} from "@/config/fonts";
 import {Navbar} from "@/components/navbar";
 import React from "react";
-import {LinkedInIcon, InstagramIcon, GdGIcon} from "@/components/icons"; // Import the new icons
+import {GdGIcon, InstagramIcon, LinkedInIcon} from "@/components/icons"; // Import the new icons
 
 export const metadata: Metadata = {
     title: {
@@ -29,11 +29,7 @@ export const viewport: Viewport = {
     ],
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode; }) {
     return (
         <html suppressHydrationWarning lang="en">
         <head>
@@ -55,6 +51,10 @@ export default function RootLayout({
                 </main>
                 <footer className="w-full flex items-center justify-center py-3">
                     <div className="flex items-center gap-4">
+                        <Link href="/imprint" aria-label="Imprint" className="text-default-500 text-sm hover:text-default-700">
+                            Imprint
+                        </Link>
+                        <span className="text-default-300">|</span>
                         <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
                             <LinkedInIcon className="text-default-500"/>
                         </Link>
